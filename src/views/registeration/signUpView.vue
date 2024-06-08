@@ -1,9 +1,9 @@
 <template>
     <div class="parent">
         <form @submit.prevent="register">
+            <h1>hello</h1>
             <div class="form-group">
                 <label for="input_1">Username</label>
-                <!-- Updated v-model to use user.username -->
                 <input type="text" id="input_1" required v-model="user.username">
                 <p class="error-message" v-text="usernameError"></p>
             </div>
