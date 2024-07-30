@@ -65,14 +65,22 @@ export default {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
     position: relative;
 }
 
 .about {
     margin-top: 0em;
     text-align: center;
+    padding: 1em;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
-
 
 .draggable:active {
     cursor: grabbing;
@@ -81,7 +89,7 @@ export default {
 p,
 h2,
 li {
-    font-size: 2em;
+    font-size: 1.2em;
     background: linear-gradient(45deg, #4CAF50, #FFC107);
     -webkit-background-clip: text;
     /* Vendor-prefixed version for WebKit browsers */
@@ -121,6 +129,15 @@ ul {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    p,
+    h2,
+    li {
+        font-size: 1em;
     }
 }
 </style>
