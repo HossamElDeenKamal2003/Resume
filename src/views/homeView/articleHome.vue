@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="description">
-            <h1 class="des">Hello, I am Hossam El_Deen Kamal <br> Frontend Developer with VueJs</h1>
+            <h1 class="des">Hello, I am Hossam El_Deen Kamal <br> FullStack Developer</h1>
         </div>
         <div class="img-container">
             <img class="img" src="../../assets//NEPH8786.jpg" alt="not support" width="300px" height="300px">

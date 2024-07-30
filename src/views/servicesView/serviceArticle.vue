@@ -10,7 +10,7 @@ export default {
     data() {
         return {
             items: [
-                'Web Development: Highlight your expertise in creating responsive and user-friendly websites',
+                'Web Development: Highlight your expertise in creating responsive and user-friendly websites, Frontend and Backend',
                 'UI/UX Design: Offer UI/UX design services, demonstrating your ability to create visually appealing and intuitive user interfaces',
                 'Responsive Design: Emphasize your expertise in creating websites that are optimized for different screen sizes and devices',
                 'Performance Optimization: Offer services related to optimizing website performance. Highlight your skills in optimizing code, reducing page load times',
@@ -56,7 +56,7 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin-top: 5em;
     
 }

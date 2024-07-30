@@ -7,8 +7,8 @@
             <router-link class="router" to="/">Home</router-link> |
             <router-link class="router" to="/about">About</router-link> |
             <router-link class="router" to="/service">Service</router-link> |
-            <router-link class="router" to="/login">Login</router-link> |
-            <router-link class="router" to="/signup">SignUp</router-link> |
+            <!-- <router-link class="router" to="/login">Login</router-link> |
+            <router-link class="router" to="/signup">SignUp</router-link> | -->
         </nav>
     </div>
 </template>

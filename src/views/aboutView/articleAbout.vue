@@ -1,21 +1,31 @@
 <template>
-    <div class="about container draggable" :style="{ top: position.y + 'px', left: position.x + 'px' }"
-        @mousedown="startDrag" @mousemove="handleDrag" @mouseup="stopDrag">
-        <p>
-            Hello! I'm Hossam El_Deen, a passionate frontend developer with a knack for crafting elegant and user-friendly
-            interfaces.
-            With a background in computer science and a love for coding, I bring creativity and attention to detail to every
-            project.
-        </p>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5, CSS3, JavaScript (ES6+)</li>
-            <li>React.js, Vue.js</li>
-            <li>Responsive Web Design</li>
-            <li>UI/UX Design Principles</li>
-        </ul>
+    <div class="wrapper">
+        <div class="about container draggable" :style="{ top: position.y + 'px', left: position.x + 'px' }"
+            @mousedown="startDrag" @mousemove="handleDrag" @mouseup="stopDrag">
+            <p>
+                Hello! I'm Hossam El_Deen, FullStack with a knack for crafting elegant and user-friendly
+                interfaces.
+                With a background in computer science and a love for coding, I bring creativity and attention to detail
+                to every
+                project.
+                <a href="https://github.com/HossamElDeenKamal2003" target="_blank">GitHub</a>
+            </p>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>React.js, Vue.js, </li>
+                <li>Nodejs, </li>
+                <li>Responsive Web Design, </li>
+                <li>UI/UX Design Principles, </li>
+                <li>C++, </li>
+                <li>C#, </li>
+                <li>OOP, </li>
+                <li>Problem Solver</li>
+            </ul>
+        </div>
     </div>
 </template>
+
 <script>
 export default {
     name: 'articleAbout',
@@ -46,20 +56,23 @@ export default {
             this.isDragging = false;
         },
     },
-
 }
 </script>
+
 <style scoped>
-.about {
-    margin-top: 5em;
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
 }
 
-.draggable {
-    position: absolute;
-    cursor: grab;
-    user-select: none;
-    transition: transform 0.2s ease;
+.about {
+    margin-top: 0em;
+    text-align: center;
 }
+
 
 .draggable:active {
     cursor: grabbing;
@@ -70,7 +83,8 @@ h2,
 li {
     font-size: 2em;
     background: linear-gradient(45deg, #4CAF50, #FFC107);
-    -webkit-background-clip: text; /* Vendor-prefixed version for WebKit browsers */
+    -webkit-background-clip: text;
+    /* Vendor-prefixed version for WebKit browsers */
     background-clip: text;
     color: transparent;
     display: inline-block;
@@ -78,8 +92,9 @@ li {
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-    font-family: fantasy;
-}   
+    font-family: 'Times New Roman', Times, serif;
+}
+
 @keyframes desani {
     0% {
         opacity: 0;
@@ -91,21 +106,21 @@ li {
         transform: translateY(0);
     }
 }
+
 ul {
     list-style: none;
     animation: fadeInUp 1s ease-out forwards;
+}
 
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-            /* Initial position */
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-            /* Final position */
-        }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-}</style>
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
